@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext } from 'react';
 import ExpenseItem from './ExpenseItem';
 import { AppContext } from '../context/AppContext';
@@ -25,3 +26,6 @@ const ExpenseList = () => {
 };
 
 export default ExpenseList;
+=======
+
+>>>>>>> 5b180c9e2e254cedb93e18f64cd145ae1b680e4e

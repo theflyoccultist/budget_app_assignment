@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 
@@ -79,3 +80,6 @@ const AllocationForm = (props) => {
 };
 
 export default AllocationForm;
+=======
+
+>>>>>>> 5b180c9e2e254cedb93e18f64cd145ae1b680e4e

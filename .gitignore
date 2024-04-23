@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 node_modules/
 
+=======
+>>>>>>> 5b180c9e2e254cedb93e18f64cd145ae1b680e4e
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

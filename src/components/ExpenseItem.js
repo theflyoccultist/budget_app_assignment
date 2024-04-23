@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useContext } from 'react';
 import { TiDelete } from 'react-icons/ti';
 import { AppContext } from '../context/AppContext';
@@ -36,3 +37,6 @@ const ExpenseItem = (props) => {
 };
 
 export default ExpenseItem;
+=======
+
+>>>>>>> 5b180c9e2e254cedb93e18f64cd145ae1b680e4e

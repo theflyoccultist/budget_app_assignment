@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 const ExpenseTotal = () => {
@@ -13,6 +12,3 @@ const ExpenseTotal = () => {
     );
 };
 export default ExpenseTotal;
-=======
-
->>>>>>> 5b180c9e2e254cedb93e18f64cd145ae1b680e4e

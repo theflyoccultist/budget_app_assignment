@@ -9,8 +9,14 @@ const Budget = () => {
     }
     return (
 <div className='alert alert-secondary'>
-<span>Budget: £{newBudget}</span>
-<input type="number" step="10" value={newBudget} onChange={handleBudgetChange} max={20000}></input>
+<span>Budget: £</span>
+<input 
+    type="number" 
+    step="10" 
+    value={newBudget} 
+    onChange={handleBudgetChange} 
+    max={20000}
+    />
 </div>
     );
 };

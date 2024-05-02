@@ -4,6 +4,7 @@ import { AppContext } from '../context/AppContext';
 const Budget = () => {
     const { budget } = useContext(AppContext);
     const [newBudget, setNewBudget] = useState(budget);
+    
     const handleBudgetChange = (event) => {
         setNewBudget(event.target.value);
     }

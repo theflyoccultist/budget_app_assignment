@@ -42,11 +42,11 @@ const AllocationForm = (props) => {
                 <label className="input-group-text" htmlFor="inputGroupSelect01">Department</label>
                   </div>
                   <select className="custom-select" id="inputGroupSelect01" onChange={(event) => setName(event.target.value)}>
-                        <option defaultValue>Choose...</option>
-                        <option value="Marketing" name="marketing"> Marketing</option>
-                <option value="Sales" name="sales">Sales</option>
+                <option defaultValue>Choose...</option>
+                <option value="Marketing" name="marketing"> Marketing</option>
                 <option value="Finance" name="finance">Finance</option>
-                <option value="HR" name="hr">HR</option>
+                <option value="Sales" name="sales">Sales</option>
+                <option value="Human Resource" name="human resource">Human Resource</option>
                 <option value="IT" name="it">IT</option>
                   </select>
 
@@ -55,8 +55,10 @@ const AllocationForm = (props) => {
                   </div>
                   <select className="custom-select" id="inputGroupSelect02" onChange={(event) => setAction(event.target.value)}>
                         <option defaultValue value="Add" name="Add">Add</option>
-                <option value="Reduce" name="Reduce">Reduce</option>
+                        <option value="Reduce" name="Reduce">Reduce</option>
                   </select>
+
+                  <label style={{ marginLeft: '2rem'}}>£</label>
                     <input
                         step={10}
                         required='required'
@@ -64,9 +66,9 @@ const AllocationForm = (props) => {
                         id='cost'
                         placeholder='Enter a number'
                         value={cost}
-                        style={{ marginLeft: '2rem' , size: 10}}
+                        style={{size: 20, marginLeft: '.5rem'}}
                         onChange={(event) => setCost(event.target.value)}>
-                        </input>
+                    </input>
 
                     <button className="btn btn-primary" onClick={submitEvent} style={{ marginLeft: '2rem' }}>
                         Save

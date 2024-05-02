@@ -1,24 +1,36 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useReducer } from 'react';
 import { AppContext } from '../context/AppContext';
 
+const budgetReducer = (state, action) => {
+    switch (action.type) {
+        case 'SET_BUDGET':
+            return action.payload;
+        default:
+            return state;
+    }
+};
+
 const Budget = () => {
-    const { budget } = useContext(AppContext);
-    const [newBudget, setNewBudget] = useState(budget);
+    const { budget, dispatch } = useContext(AppContext);
     
     const handleBudgetChange = (event) => {
-        setNewBudget(event.target.value);
-    }
+        const newBudget = parseInt(event.target.value, 10);
+        dispatch({ type: 'SET_BUDGET', payload: newBudget });
+    };
+
     return (
-<div className='alert alert-secondary'>
-<span>Budget: £</span>
-<input 
-    type="number" 
-    step="10" 
-    value={newBudget} 
-    onChange={handleBudgetChange} 
-    max={20000}
-    />
-</div>
+        <div className='alert alert-secondary'>
+            <span>Budget: £</span>
+            <input 
+                type="number" 
+                step="10" 
+                value={budget} 
+                onChange={handleBudgetChange} 
+                max={20000}
+            />
+        </div>
     );
 };
+
 export default Budget;
+

@@ -9,6 +9,12 @@ const Remaining = () => {
     const alertType = totalExpenses > budget ? 'alert-danger': 'alert-success';
     const remainingBudget = budget - totalExpenses;
 
+//    const valueRemaining = remainingBudget.valueOf();
+
+//     if (valueRemaining < 0) {
+//         alert('you cannot reduce the budget value more than the spending')
+//     }
+
 
 
     return (

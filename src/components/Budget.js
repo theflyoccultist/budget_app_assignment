@@ -1,14 +1,14 @@
-import React, { useContext, useReducer } from 'react';
+import React, { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
-const budgetReducer = (state, action) => {
-    switch (action.type) {
-        case 'SET_BUDGET':
-            return action.payload;
-        default:
-            return state;
-    }
-};
+// const budgetReducer = (state, action) => {
+//     switch (action.type) {
+//         case 'SET_BUDGET':
+//             return action.payload;
+//         default:
+//             return state;
+//     }
+// };
 
 const Budget = () => {
     const { budget, dispatch, currency } = useContext(AppContext);
@@ -20,7 +20,7 @@ const Budget = () => {
 
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: </span>
+            <span>Budget: {currency}</span>
             <input 
                 type="number" 
                 step="10" 

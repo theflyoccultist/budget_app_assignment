@@ -11,7 +11,7 @@ const budgetReducer = (state, action) => {
 };
 
 const Budget = () => {
-    const { budget, dispatch } = useContext(AppContext);
+    const { budget, dispatch, currency } = useContext(AppContext);
     
     const handleBudgetChange = (event) => {
         const newBudget = parseInt(event.target.value, 10);
@@ -20,7 +20,7 @@ const Budget = () => {
 
     return (
         <div className='alert alert-secondary'>
-            <span>Budget: £</span>
+            <span>Budget: </span>
             <input 
                 type="number" 
                 step="10" 

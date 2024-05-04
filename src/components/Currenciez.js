@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
+// import { AppContext } from '../context/AppContext';
 
 const Currenciez = () => {
+
+   // const [currency, setCurrency] = useContext(AppContext);
 
     return (
         <div className='alert alert-success'>
